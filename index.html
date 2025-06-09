@@ -1,0 +1,1358 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="en" />
+  <meta name="theme-color" content="#0a0a23" />
+
+  <!-- SEO Title -->
+  <title>Thopps Technologies | Innovation, AI Research & Intelligent Tech Solutions</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Thopps Technologies blends human ingenuity with AI and intelligent technology to design impactful platforms, ventures, and solutions for a better world." />
+
+  <!-- Keywords (optional, still mildly useful) -->
+  <meta name="keywords" content="Thopps Technologies, AI Research, Innovation, Intelligent Tech, Digital Transformation, Smart Platforms, Machine Learning, Social Innovation, Singapore Tech, Tech Ventures, AI Solutions" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.thopps.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Thopps Technologies | Innovation, AI Research & Intelligent Tech Solutions" />
+  <meta property="og:description" content="Blending creativity and AI to create impactful platforms, products, and social innovation ventures." />
+  <meta property="og:url" content="https://www.thopps.com/" />
+  <meta property="og:image" content="https://www.thopps.com/assets/og-image.jpg" />
+  <meta property="og:site_name" content="Thopps Technologies" />
+
+  <!-- Twitter Card Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thopps Technologies | AI Innovation & Tech Solutions" />
+  <meta name="twitter:description" content="Explore AI-powered innovation and social tech ventures from Thopps Technologies." />
+  <meta name="twitter:image" content="https://www.thopps.com/assets/og-image.jpg" />
+  <meta name="twitter:site" content="@ThoppsTech" /> <!-- Replace with your Twitter handle if available -->
+
+  <!-- Performance: Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap & AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Structured Data with JSON-LD -->
+  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Thopps Technologies",
+  "url": "https://www.thopps.com",
+  "logo": "https://www.thopps.com/assets/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/thopps",
+    "https://twitter.com/ThoppsTech",
+    "https://www.facebook.com/thoppstechnologies"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+65-8012-2467",
+    "contactType": "customer support",
+    "areaServed": "SG",
+    "availableLanguage": "English"
+  },
+  "description": "Thopps Technologies blends AI, human creativity, and intelligent tech to create solutions and ventures that drive innovation and social impact."
+}
+</script>
+
+</head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      background-color: #ffffff;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Toggler (hamburger) styles */
+    .custom-toggler .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: white;
+      transition: all 0.4s ease;
+    }
+
+    .custom-toggler.open .top-bar {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .custom-toggler.open .middle-bar {
+      opacity: 0;
+    }
+
+    .custom-toggler.open .bottom-bar {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-nav {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar-nav .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      margin: 0.5rem 0;
+      padding: 0.75rem 0;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+      width: 100%;
+      display: block;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ddd !important;
+    }
+
+    /* Offcanvas menu styling */
+    .offcanvas-end {
+      background-color: #000;
+      width: 250px;
+    }
+
+    .offcanvas-header {
+      color: white;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .offcanvas-body {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 2rem;
+      gap: 1.5rem;
+    }
+
+    /* Custom animated X close button */
+    .custom-close {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .custom-close .bar {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      top: 50%;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+
+    .custom-close .bar1 {
+      transform: rotate(45deg);
+    }
+
+    .custom-close .bar2 {
+      transform: rotate(-45deg);
+    }
+
+    .custom-close:hover {
+      transform: rotate(90deg);
+    }
+
+    /* Hero and other content styling */
+    .hero-container {
+      position: relative;
+      padding: 5rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .hero-container h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      animation: fadeSlideUp 1s ease forwards;
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+
+    .typed-words {
+      display: inline-block;
+      color: #e7e7e7;
+      font-weight: 600;
+      min-width: 150px;
+      height: 1.3em;
+      perspective: 1000px;
+    }
+
+    .flip-word {
+      display: inline-block;
+      transform-origin: center top;
+      backface-visibility: hidden;
+      transform: rotateX(90deg);
+      opacity: 0;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .hero-container p {
+      max-width: 650px;
+      font-size: 1.25rem;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      animation: fadeSlideUp 1s ease forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+
+    .cta-button {
+      background: #ffffff;
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+      animation: pulseGlow 2s infinite, fadeSlideUp 1s ease forwards;
+      animation-delay: 0.8s;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 40px rgba(255, 255, 255, 0.6);
+    }
+
+    .cta-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.6);
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+      }
+
+      100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-container h1 {
+        font-size: 3rem;
+      }
+
+      .hero-container p {
+        font-size: 1.05rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-container h1 {
+        font-size: 2.4rem;
+      }
+
+      .hero-container p {
+        font-size: 0.95rem;
+      }
+
+      .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+      }
+    }
+
+    .cta-button span {
+      display: inline-block;
+      margin-left: 0.5rem;
+      animation: floatArrow 2s infinite ease-in-out;
+    }
+
+    @keyframes floatArrow {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(4px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top bg-black px-3" tabindex="0">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand pe-md-4 fs-4 text-white" href="index.html">
+        <img src="./assets/sidelogo.png" alt="Logo" style="max-height: 60px; width: auto;" />
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="bar top-bar"></span>
+        <span class="bar middle-bar"></span>
+        <span class="bar bottom-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header d-flex justify-content-between align-items-center">
+      <a class="navbar-brand pe-md-4 fs-4 text-white" href="index.html">
+        <img src="./assets/Logo.png" alt="Logo" style="max-height: 60px; width: auto;" />
+      </a>
+      <!-- Custom Close Button -->
+      <div class="custom-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+      </div>
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-items-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#what-we-do">What We Do </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#what-we-are-building">What We Build</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link fs-5" href="#connect">Get In Touch</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggler = document.querySelector('.custom-toggler');
+      const offcanvas = document.getElementById('offcanvasNavbar');
+
+      if (toggler && offcanvas) {
+        offcanvas.addEventListener('show.bs.offcanvas', () => {
+          toggler.classList.add('open');
+        });
+
+        offcanvas.addEventListener('hide.bs.offcanvas', () => {
+          toggler.classList.remove('open');
+        });
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggler = document.querySelector('.custom-toggler');
+      const offcanvasElement = document.getElementById('offcanvasNavbar');
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement) || new bootstrap.Offcanvas(offcanvasElement);
+
+      if (offcanvasElement && toggler) {
+        // Toggle button animation on offcanvas open/close
+        offcanvasElement.addEventListener('show.bs.offcanvas', () => toggler.classList.add('open'));
+        offcanvasElement.addEventListener('hide.bs.offcanvas', () => toggler.classList.remove('open'));
+
+        // Cleanup backdrop and scroll lock after offcanvas fully hidden
+        offcanvasElement.addEventListener('hidden.bs.offcanvas', () => {
+          const backdrop = document.querySelector('.offcanvas-backdrop');
+          if (backdrop) backdrop.remove();
+
+          document.body.classList.remove('offcanvas-open');
+          document.body.style.overflow = '';
+          document.body.style.paddingRight = '';
+          document.documentElement.style.overflow = '';
+        });
+
+        // Close offcanvas when any nav link inside it is clicked
+        offcanvasElement.querySelectorAll('a.nav-link').forEach(link => {
+          link.addEventListener('click', () => bsOffcanvas.hide());
+        });
+      }
+    });
+  </script>
+
+
+  <!-- Example Content -->
+  <main>
+    <div class="hero-container" id="hero">
+      <div class="cursor" id="custom-cursor"></div>
+
+      <h1>
+        Making<br>
+        <span class="typed-words">innovation</span><br>
+        work for everyone.
+      </h1>
+
+      <p>
+        We blend human ingenuity and intelligent technology to build things that matter.
+      </p>
+
+      <a href="#what-we-do" class="cta-button">Explore What We Do <span>↓</span></a>
+    </div>
+
+    <style>
+      #what-we-do {
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 10px;
+  /* Fix for navbar overlap */
+  padding-bottom: 4rem;  /* <-- Added padding bottom */
+}
+    </style>
+<section id="what-we-do" class="what-we-do bg-white py-5">
+  <div class="container px-4 py-5 rounded-5">
+
+    <!-- Heading outside row/column -->
+    <div class="text-center" data-aos="fade" data-aos-delay="200">
+      <span class="h3 fw-lighter" style="color: #000000;">What We Do</span>
+      <h2 class="display-6 fw-light mt-2 heading-lg" style="color: #222;">
+        We build technologies, empower people,<br class="d-none d-md-block" />
+        and create ventures that make a real impact.
+      </h2>
+    </div>
+    <div class="row gx-5 gy-5">
+
+      <!-- Left Column -->
+      <div class="col-12 col-md-6">
+
+<!-- What We Do Heading -->
+<!-- What We Do Heading -->
+<div class="p-5 pt-0 mb-4 hover-div" data-aos="zoom-in" data-aos-delay="400">
+  <h2 class="display-6 fw-light mt-2" style="color: #000000;">
+    <span class="reveal">
+      We love to: <br>
+      <span class="love-point" data-aos="fade-up" data-aos-delay="500">Design Solutions</span><br>
+      <span class="love-point" data-aos="fade-up" data-aos-delay="700">Drive Social Innovation</span><br>
+      <span class="love-point" data-aos="fade-up" data-aos-delay="900">Build Ventures</span>
+    </span>
+  </h2>
+</div>
+
+
+
+
+<style>
+.love-point {
+  position: relative;
+  padding-left: 2.5rem;   /* space for icon */
+  font-weight: 200;
+  color: #222;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Heart icon in circle before each item */
+.love-point::before {
+  content: "❤︎";  /* Unicode heart */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000; /* pink/red circle */
+  color: white;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.reveal strong {
+  font-weight: 200;
+  color: #222; /* darker for contrast */
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+
+
+</style>
+
+
+
+        <!-- Card 1 -->
+          <div class="card mb-5 shadow-sm card-hover" data-aos="zoom-in" data-aos-delay="100">
+            <div class="rounded-5 p-0 overflow-hidden">
+              <img src="./assets/card1.jpg" alt="Innovating for Greater Good"
+                class="img-fluid rounded-top-5 mb-0" loading="lazy" />
+              <div class="px-5 pt-3 pb-4">
+                <h2 class="fw-lighter heading-lg" data-aos="fade-up" data-aos-delay="300">Innovating for Greater Good</h2>
+                <p class="pb-3 custom-text-lg" data-aos="fade-up" data-aos-delay="400">
+                  We use creativity and technology to tackle meaningful challenges and help build stronger, more
+                  connected communities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- Card 3 -->
+        <div class="card mb-0 shadow-sm card-hover d-flex flex-column-reverse" data-aos="zoom-in"
+          data-aos-delay="300">
+          <div class="rounded-5 p-0 overflow-hidden">
+            <img src="./assets/buildingventures.jpg" alt="Building Ventures"
+              class="img-fluid rounded-bottom-5" loading="lazy" />
+            <div class="p-5">
+              <h2 class="fw-lighter heading-lg" data-aos="fade-up" data-aos-delay="500">Building Ventures</h2>
+              <p class="pb-6 custom-text-lg" data-aos="fade-up" data-aos-delay="600">
+                We create our own spin-off ventures and partner with others to transform great ideas into thriving
+                products and businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-12 col-md-6">
+
+        <!-- Card 2 -->
+<div class="card mb-5 shadow-sm card-hover d-flex flex-column-reverse mt-md-5" data-aos="zoom-in" data-aos-delay="200">
+  <div class="rounded-5 p-0 overflow-hidden">
+    <img src="./assets/Discover. Build. Solve..jpg" alt="Discover Build Solve"
+      class="img-fluid rounded-bottom-5" loading="lazy" />
+    <div class="p-5">
+      <h2 class="fw-lighter heading-lg" data-aos="fade-up" data-aos-delay="400">Discover. Build. Solve.</h2>
+      <p class="pb-6 custom-text-lg" data-aos="fade-up" data-aos-delay="500">
+        We dive into research, explore new possibilities, and turn insights into solutions that make
+        everyday life better.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Card 4 -->
+        <div class="card mb-5 shadow-sm card-hover" data-aos="zoom-in" data-aos-delay="400">
+          <div class="rounded-5 p-0 overflow-hidden">
+            <img src="./assets/Upskilling. Uplifting.jpg" alt="Upskilling Uplifting"
+              class="img-fluid rounded-top-5" loading="lazy" />
+            <div class="p-5">
+              <h2 class="fw-lighter heading-lg" data-aos="fade-up" data-aos-delay="600">Upskilling. Uplifting.</h2>
+              <p class="pb-6 custom-text-lg" data-aos="fade-up" data-aos-delay="700">
+                We share knowledge, encourage learning, and help people build new skills so everyone can grow and
+                succeed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 pt-0 mb-1" data-aos="zoom-in" data-aos-delay="400">
+          <h2 class="display-6 fw-light mt-1" style="color: #222;">
+            <span class="reveal">We build with purpose to create ripple effects of progress.</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 700,
+    easing: 'ease-out',
+    offset: 120,
+  });
+</script>
+
+<style>
+  /* Custom AOS zoom-in effect */
+  [data-aos="zoom-in"] {
+    transform-origin: center center;
+    opacity: 0;
+    transform: scale(0.85);
+    transition-property: opacity, transform;
+    transition-duration: 700ms;
+    transition-timing-function: ease-out;
+  }
+
+  [data-aos="zoom-in"].aos-animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Optional: card hover effect */
+  .card-hover:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Card styling */
+  .card {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .rounded-top-5 {
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+  }
+
+  .rounded-bottom-5 {
+    border-bottom-left-radius: 1.25rem !important;
+    border-bottom-right-radius: 1.25rem !important;
+  }
+
+  /* Set image size to 160x160 */
+.card img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* Typography colors */
+  .fw-lighter {
+    font-weight: 400 !important;
+  }
+
+  h2,
+  p {
+    color: #222;
+  }
+
+  p {
+    color: #000000;
+  }
+
+  /* Card inner padding */
+  .p-5 {
+    padding: 3rem !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .p-5 {
+      padding: 1.5rem !important;
+    }
+  }
+
+  /* Custom larger text for paragraph */
+  .custom-text-lg {
+    font-size: 1.125rem;
+    /* ~18px */
+  }
+
+  @media (min-width: 768px) {
+    .custom-text-lg {
+      font-size: 1.25rem;
+      /* ~20px */
+    }
+  }
+
+  /* Larger headings */
+  .heading-lg {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .heading-lg {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+<style>
+#what-we-are-building {
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+  /* Fix for navbar overlap */
+  padding-bottom: 4rem;  /* <-- Added padding bottom */
+}
+
+
+      .wwab-intro {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .wwab-intro span.h5 {
+        font-weight: 300;
+        color: #888;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .wwab-intro h2 {
+        font-weight: 300;
+        color: #222;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+      }
+
+      .wwab-intro p {
+        color: #666;
+      }
+
+      .chips {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .chip {
+        padding: 0.6rem 1.4rem;
+        border-radius: 9999px;
+        background: #f0f0f0;
+        color: #555;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+        user-select: none;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .chip:hover {
+        background-color: #dbdbdb;
+        color: #424242;
+      }
+
+      .chip.active,
+      .chip:focus-visible {
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+        outline: 2px solid #000;
+        outline-offset: 2px;
+      }
+
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+      }
+
+      .card_wwb {
+        width: 280px;
+        height: 380px;
+        background: #fff;
+        border-radius: 0.75rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card_wwb:hover,
+      .card_wwb:focus-within {
+        transform: translateY(-6px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+        outline: none;
+      }
+
+      .card_wwb img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .card-content {
+        padding: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .card-content h3 {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #222;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.3;
+        flex-grow: 1;
+      }
+
+      .card-category {
+        align-self: flex-start;
+        margin-top: 1rem;
+        background: #000;
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+      }
+
+      @media (max-width: 600px) {
+        .card_wwb {
+          width: 90vw;
+          height: auto;
+        }
+
+        .card_wwb img {
+          height: 160px;
+        }
+
+        .wwab-intro h2 {
+          font-size: 1.5rem !important;
+          line-height: 1.2;
+        }
+      }
+
+      .nav-icon {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background-color: #000;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-icon:hover {
+        background-color: #333;
+        transform: scale(1.1);
+      }
+    </style>
+    <section id="what-we-are-building" aria-label="What We Are Building Section">
+    <div class="mb-5 text-center" data-aos="fade" data-aos-delay="200">
+      <span class="h3 fw-lighter" style="color: #000000;">What We Build</span>
+      <h2 class="display-6 fw-light mt-2 heading-lg" style="color: #222;">
+        Our work speaks for us,<br class="d-none d-md-block" />
+        explore what we’re building.
+      </h2>
+    </div>
+
+      <div class="chips" role="list" aria-label="Project categories filter">
+        <div class="chip active" data-filter="all" role="listitem" tabindex="0" aria-pressed="true">All</div>
+        <div class="chip" data-filter="platforms" role="listitem" tabindex="0">Platforms</div>
+        <div class="chip" data-filter="learning" role="listitem" tabindex="0">Learning</div>
+        <div class="chip" data-filter="ventures" role="listitem" tabindex="0">Ventures</div>
+        <div class="chip" data-filter="social" role="listitem" tabindex="0">Social Inovation</div>
+      </div>
+
+      <div class="card-grid">
+        <article class="card_wwb position-relative" data-category="platforms" data-aos="fade-up">
+          <img src="./assets/wowlyx.png" alt="Wowlyx project preview" />
+          <div class="card-content">
+            <h3>Wowlyx</h3>
+            <p>Vision intelligence platform for real-time video analytics and smart environments.</p>
+          </div>
+          <a href="https://wowlyx.com" class="nav-icon" aria-label="View Wowlyx"><i class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="platforms" data-aos="fade-up" data-aos-delay="100">
+          <img src="./assets/aiq.png" alt="AIQ project preview" />
+          <div class="card-content">
+            <h3>AIQ</h3>
+            <p>Enterprise AI platform for managing knowledge, automating workflows, and integrating intelligent agents.
+            </p>
+          </div>
+          <a href="#" class="nav-icon" aria-label="View AIQ"><i class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="learning" data-aos="fade-up" data-aos-delay="200">
+          <img src="./assets/thoppsVarsity.png" alt="Thopps Varsity" />
+          <div class="card-content">
+            <h3>Thopps Varsity</h3>
+            <p>Our learning hub for upskilling, growth, and unlocking new potential.</p>
+          </div>
+          <a href="https://varsity.thopps.com" class="nav-icon" aria-label="View Varsity"><i class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="ventures" data-aos="fade-up" data-aos-delay="300">
+          <img src="./assets/Techspire.png" alt="Techspire Innovations" />
+          <div class="card-content">
+            <h3>Techspire Innovations</h3>
+            <p>Delivering intelligent tech solutions for businesses and communities in Singapore.</p>
+          </div>
+          <a href="https://techspire.sg/" class="nav-icon" aria-label="View Techspire"><i
+              class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="ventures" data-aos="fade-up" data-aos-delay="400">
+          <img src="./assets/nallahealth.png" alt="NallaHealth" />
+          <div class="card-content">
+            <h3>NallaHealth</h3>
+            <p>A holistic healthcare platform designed for better health, wellness, and care management.</p>
+          </div>
+          <a href="https://nallahealth.life" class="nav-icon" aria-label="View NallaHealth"><i
+              class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="ventures" data-aos="fade-up" data-aos-delay="500">
+          <img src="./assets/swimmunity.png" alt="Swimmunity" />
+          <div class="card-content">
+            <h3>Swimmunity</h3>
+            <p>Building connected aquatic communities—combining fitness, fun, and water safety for everyone.</p>
+          </div>
+          <a href="https://swimmunity.com" class="nav-icon" aria-label="View Swimmunity"><i
+              class="fas fa-location-arrow"></i></a>
+        </article>
+
+        <article class="card_wwb position-relative" data-category="social" data-aos="fade-up" data-aos-delay="600">
+          <img src="./assets/meenachilriver.png" alt="MeenachilRiver" />
+          <div class="card-content">
+            <h3>MeenachilRiver.org</h3>
+            <p>Smart river and rain monitoring solution using intelligent prediction to help prevent floods.</p>
+          </div>
+          <a href="https://meenachilriver.org" class="nav-icon" aria-label="View MeenachilRiver"><i class="fas fa-location-arrow"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+          once: false,
+          duration: 800,
+          easing: 'ease-out-cubic',
+          offset: 100,
+        });
+
+        const chips = document.querySelectorAll('.chip');
+        const cards = document.querySelectorAll('.card_wwb');
+        const categoryLabels = {
+          platforms: "Platforms",
+          learning: "Learning",
+          ventures: "Ventures",
+          social: "Social Inovation"
+        };
+
+        cards.forEach(card => {
+          const cat = card.dataset.category;
+          const badge = document.createElement('div');
+          badge.className = 'card-category';
+          badge.textContent = categoryLabels[cat] || '';
+          card.querySelector('.card-content').appendChild(badge);
+        });
+
+        chips.forEach(chip => {
+          chip.addEventListener('click', () => {
+            const filter = chip.dataset.filter;
+            chips.forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+
+            cards.forEach(card => {
+              const show = filter === 'all' || card.dataset.category === filter;
+              card.style.display = show ? 'flex' : 'none';
+            });
+
+            AOS.refresh();
+          });
+        });
+      });
+    </script>
+
+<!-- Add this in <head> if not already included -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+<!-- GET IN TOUCH SECTION WITH ANIMATIONS -->
+<section class="get-connected-section py-5 bg-white" id="connect">
+  <div class="container text-center">
+    <div class="text-center" data-aos="fade" data-aos-delay="200">
+      <span class="h3 fw-lighter" style="color: #000000;">Get In Touch</span>
+      <h2 class="display-6 fw-light mt-2 heading-lg" style="color: #222;">
+        We'd love to hear from you! <br class="d-none d-md-block" />
+      </h2>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row justify-content-center g-4 my-5" data-aos="fade-up" data-aos-delay="100">
+      <!-- WhatsApp -->
+      <div class="col-10 col-sm-6 col-lg-3">
+        <a href="https://wa.me/6580122467" target="_blank" class="text-decoration-none text-dark d-block p-4 border rounded-4 shadow-sm hover-card">
+          <div class="icon-wrapper mb-3">
+            <!-- WhatsApp Icon -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h5 class="fw-bold mb-1">WhatsApp</h5>
+          <p class="text-muted mb-0">+65 8012 2467</p>
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="col-10 col-sm-6 col-lg-3">
+        <a href="mailto:connect@thopps.com" class="text-decoration-none text-dark d-block p-4 border rounded-4 shadow-sm hover-card">
+          <div class="icon-wrapper mb-3">
+            <!-- Email Icon -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/>
+            </svg>
+          </div>
+          <h5 class="fw-bold mb-1">Email Us</h5>
+          <p class="text-muted mb-0">contactus@thopps.com</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h6 class="text-uppercase text-muted mb-4">Follow Us</h6>
+      <div class="d-flex justify-content-center gap-4">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/thopps-technologies/" target="_blank" class="text-dark fs-3 social-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+
+        <!-- Twitter/X -->
+        <a href="https://x.com/ThoppsTech" target="_blank" class="text-dark fs-3 social-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61550994736993" target="_blank" class="text-dark fs-3 social-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hover-card {
+    transition: all 0.3s ease;
+    background: white;
+    height: 100%;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .icon-wrapper {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-card:hover .icon-wrapper {
+    transform: scale(1.1);
+  }
+
+  .social-icon {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+  }
+
+  .social-icon:hover {
+    transform: translateY(-4px) scale(1.1);
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .get-connected-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+</style>
+
+
+<footer class="footer bg-black text-white py-4">
+  <!-- Copyright -->
+  <div class="text-white-50 small text-center justify-content-center" style="min-width: 220px;">
+    &copy; <span id="currentYear"></span> Thopps Technologies. All rights reserved.
+  </div>
+</footer>
+
+
+  <script>
+    (function () {
+      const words = ["innovation", "intelligence", "technology",];
+      let wordIndex = 0;
+      const typedSpan = document.querySelector(".typed-words");
+      if (!typedSpan) return;
+
+      function flipWord() {
+        const flipSpan = document.createElement('span');
+        flipSpan.className = 'flip-word';
+        flipSpan.textContent = words[wordIndex];
+
+        flipSpan.style.transform = 'rotateX(90deg)';
+        flipSpan.style.opacity = '0';
+
+        typedSpan.innerHTML = '';
+        typedSpan.appendChild(flipSpan);
+
+        setTimeout(() => {
+          flipSpan.style.transform = 'rotateX(0deg)';
+          flipSpan.style.opacity = '1';
+        }, 10);
+
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(flipWord, 2000);
+      }
+
+      // Set first word instantly
+      typedSpan.textContent = words[wordIndex];
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(flipWord, 2500);
+    })();
+  </script>
+
+<script>
+  // Automatically update copyright year
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<style>
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+  }
+
+  .footer-logo img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .footer-link:hover {
+    color: #5c5c5c;
+    text-decoration: underline;
+  }
+
+  .footer-nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .footer-nav li {
+    list-style: none;
+  }
+
+  .text-white-50 {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #bbb;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .text-white-50 {
+      text-align: center !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+
+<style>
+  .contactbtn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 9999px;
+    background: #000000; /* Black background */
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .contactbtn:hover {
+    background-color: #6b6b6b;
+    color: white;
+  }
+
+  .contactbtn:focus-visible {
+    outline: 2px solid #646464;
+    outline-offset: 2px;
+  }
+
+  .get-connected-section {
+    background: #ffffff;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    scroll-margin: 100px; /* Fix for navbar overlap */
+  }
+
+  .get-connected-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .connect-card {
+    background: #f5f5f5;
+    padding: 2rem 1.5rem;
+    border-radius: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .connect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .connect-card i {
+    font-size: 2.5rem;
+    color: #222222;
+    margin-bottom: 1rem;
+  }
+
+  .connect-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #111111;
+  }
+
+  .chat-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+</style>
+
+
+
+  <!-- Add Boxicons CSS in <head> -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</body>
+
+</html>
